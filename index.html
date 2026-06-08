@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ms">
 <head>
@@ -9,16 +8,10 @@
 </head>
 <body>
   <div class="container">
-
-    <!-- Card A -->
     <div class="card">
       <p class="card-title">
         <span class="badge badge-a">A</span>
         Borang Input
-        <span class="toggle-group">
-          <label><input type="radio" name="modeA" value="show" checked onchange="setModeA(this.value)"> Show</label>
-          <label><input type="radio" name="modeA" value="hide" onchange="setModeA(this.value)"> Hide</label>
-        </span>
       </p>
       <div id="formA">
         <div class="field-row">
@@ -43,49 +36,10 @@
         </div>
         <hr>
         <button class="btn-siap" onclick="submitForm()">Siap</button>
-        <div class="success-msg" id="msgA">&#10003; Data berjaya disimpan!</div>
+        <div class="error-msg" id="msgError">&#9888; Sila isi semua maklumat!</div>
       </div>
     </div>
-
-    <!-- Card B -->
-    <div class="card">
-      <p class="card-title">
-        <span class="badge badge-b">B</span>
-        Paparan Rekod
-        <span class="toggle-group">
-          <label><input type="radio" name="modeB" value="hide" checked onchange="setModeB(this.value)"> Hide</label>
-          <label><input type="radio" name="modeB" value="show" onchange="setModeB(this.value)"> Show</label>
-        </span>
-      </p>
-      <div id="displayB" style="display: none;">
-        <div class="field-row">
-          <span class="field-label">Nama</span>
-          <span class="field-value" id="dNama">—</span>
-        </div>
-        <div class="field-row">
-          <span class="field-label">No KP</span>
-          <span class="field-value" id="dKP">—</span>
-        </div>
-        <div class="field-row">
-          <span class="field-label">No Matrik</span>
-          <span class="field-value" id="dMatrik">—</span>
-        </div>
-        <div class="field-row">
-          <span class="field-label">No Tel</span>
-          <span class="field-value" id="dTel">—</span>
-        </div>
-        <div class="field-row align-top">
-          <span class="field-label">Alamat</span>
-          <span class="field-value pre-wrap" id="dAlamat">—</span>
-        </div>
-        <hr>
-        <button class="btn-batal" onclick="clearForm()">Batal / Reset</button>
-      </div>
-      <p class="hidden-msg" id="msgHidden">Paparan disembunyikan. Pilih "Show" untuk lihat rekod.</p>
-    </div>
-
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>

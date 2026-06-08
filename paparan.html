@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paparan Rekod</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <p class="card-title">
+        <span class="badge badge-b">B</span>
+        Paparan Rekod
+        <span class="toggle-group">
+          <label><input type="radio" name="modeB" value="hide" checked onchange="setModeB(this.value)"> Hide</label>
+          <label><input type="radio" name="modeB" value="show" onchange="setModeB(this.value)"> Show</label>
+        </span>
+      </p>
+      <div id="displayB" style="display: none;">
+        <div class="field-row">
+          <span class="field-label">Nama</span>
+          <span class="field-value" id="dNama">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">No KP</span>
+          <span class="field-value" id="dKP">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">No Matrik</span>
+          <span class="field-value" id="dMatrik">—</span>
+        </div>
+        <div class="field-row">
+          <span class="field-label">No Tel</span>
+          <span class="field-value" id="dTel">—</span>
+        </div>
+        <div class="field-row align-top">
+          <span class="field-label">Alamat</span>
+          <span class="field-value pre-wrap" id="dAlamat">—</span>
+        </div>
+        <hr>
+        <button class="btn-batal" onclick="clearAndBack()">Batal / Kembali</button>
+      </div>
+      <p class="hidden-msg" id="msgHidden">Paparan disembunyikan. Pilih "Show" untuk lihat rekod.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
